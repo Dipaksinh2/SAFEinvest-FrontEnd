@@ -1,0 +1,82 @@
+<div class="m-3">
+    <div class="custom-header">
+        <h3>Enter New Employee Details Here!</h3>
+        <hr>
+    </div>
+    <div class="container">
+        <div class="card m-4 p-4 row">
+            <div class="col-md-10">
+                <form (ngSubmit)="onSubmit()">
+                    <div class="form-group w-25">
+                        <label for="emp_code" class="form-label">Employee Code</label>
+                        <input type="text" class="form-control" id="emp_code" [(ngModel)]="employee.emp_code"
+                            name="emp_code" placeholder="Enter Employee Code">
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm-4">
+                            <label for="emp_firstname" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="emp_firstname"
+                                [(ngModel)]="employee.emp_firstname" name="emp_firstname"
+                                placeholder="Enter Employee's First Name">
+                        </div>
+                        <div class="form-group col-sm-4">
+                            <label for="emp_middlename" class="form-label">Middle Name</label>
+                            <input type="text" class="form-control" id="emp_middlename"
+                                [(ngModel)]="employee.emp_middlename" name="emp_middlename"
+                                placeholder="Enter Employee's Middle Name">
+                        </div>
+                        <div class="form-group col-sm-4">
+                            <label for="emp_lastname" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="emp_lastname"
+                                [(ngModel)]="employee.emp_lastname" name="emp_lastname"
+                                placeholder="Enter Employee's Last Name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm-4">
+                            <label for="emp_mobile_no" class="form-label">Mobile No</label>
+                            <input type="text" class="form-control" id="emp_mobile_no"
+                                [(ngModel)]="employee.emp_mobile_no" name="emp_mobile_no"
+                                placeholder="Enter Employee's Mobile no" maxlength="10" minlength="10">
+                        </div>
+                        <div class="form-group col-sm-4">
+                            <label for="emp_phone_no" class="form-label">Phone no</label>
+                            <input type="text" class="form-control" id="emp_phone_no"
+                                [(ngModel)]="employee.emp_phone_no" name="emp_phone_no"
+                                placeholder="Enter Employee's Phone no" maxlength="10" minlength="10">
+                        </div>
+                    </div>
+                    <div class="form-group w-50">
+                        <label for="emp_email_id" class="form-label">E-mail Id</label>
+                        <input type="email" class="form-control" id="emp_email_id" [(ngModel)]="employee.emp_email_id"
+                            name="emp_email_id" placeholder="Enter Employee's Mail Id">
+                    </div>
+                    <div class="form-group W-50">
+                        <label for="emp_address" class="form-label">Full Address</label>
+                        <textarea class="form-control" id="emp_address" [(ngModel)]="employee.emp_address"
+                            name="emp_address" placeholder="Enter Employee's Address"></textarea>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-sm-4">
+                            <label for="emp_city" class="form-label">City</label>
+                            <input type="text" class="form-control" id="emp_city" [(ngModel)]="employee.emp_city"
+                                name="emp_city" placeholder="Enter Employee's City">
+                        </div>
+
+                        <div class="form-group col-sm-4">
+                            <label for="emp_state" class="form-label">State</label>
+                            <input type="text" class="form-control" id="emp_state" [(ngModel)]="employee.emp_state"
+                                name="emp_state" placeholder="Enter Employee's State">
+                        </div>
+                        <div class="form-group col-sm-4">
+                            <label for="emp_country" class="form-label">Country</label>
+                            <input type="text" class="form-control" id="emp_country" [(ngModel)]="employee.emp_country"
+                                name="emp_country" placeholder="Enter Employee's Country">
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-outline-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

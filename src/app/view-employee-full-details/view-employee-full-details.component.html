@@ -1,0 +1,70 @@
+<div class="m-3">
+    <div class="custom-header">
+        <h3>Employee's Full Details!</h3>
+        <hr>
+    </div>
+    <div class="container">
+        <div class="card inner-card m-4 p-4">
+            <div class="row">
+                <div class="col-md-3">
+                    <label for="emp_code" class="form-label">Employee Code</label>
+                </div>
+                <div class="col-md-9">
+                    <input name="emp_code" [ngModel]="employee.emp_code" disabled="">
+                </div>
+
+
+                <div class="col-md-3">
+                    <label>Full Name</label>
+                </div>
+                <div class="col-md-9">
+                    <input [ngModel]="employee.emp_firstname" name="emp_firstname" disabled="">
+
+                    <input [ngModel]="employee.emp_middlename" name="emp_middlename" disabled="">
+
+                    <input [ngModel]="employee.emp_lastname" name="emp_middlename" disabled="">
+                </div>
+
+                <div class="col-md-3">
+                    <label for="emp_mobile_no" class="form-label">Employee's Mobile No </label>
+                </div>
+                <div class="col-md-9">
+                    <input name="emp_mobile_no" [ngModel]="employee.emp_mobile_no" disabled="">
+                </div>
+
+                <div class="col-md-3">
+                    <label for="emp_phone_no" class="form-label">Employee's Phone No </label>
+                </div>
+                <div class="col-md-9">
+                    <input name="emp_phone_no" [ngModel]="employee.emp_phone_no" disabled="">
+                </div>
+
+                <div class="col-md-3">
+                    <label for="emp_email_id" class="form-label">Employee's E-mail Id </label>
+                </div>
+                <div class="col-md-9">
+                    <input name="emp_email_id" [ngModel]="employee.emp_email_id" disabled="">
+                </div>
+
+                <div class="col-md-3">
+                    <label for="emp_address" class="form-label">Employee's Full Address </label>
+                </div>
+                <div class="col-md-9">
+                    <input name="emp_address" [ngModel]="employee.emp_address" disabled="">
+                    <input name="emp_city" [ngModel]="employee.emp_city" disabled="">
+                    <input name="emp_state" [ngModel]="employee.emp_state" disabled="">
+                    <input name="emp_country" [ngModel]="employee.emp_country" disabled="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-11"></div>
+                <div class="col-md-1">
+                    <span (click)="redirectToEmployeeList()" type="button" class="btn btn-outline-danger">
+                        <i class="material-symbols-rounded"> arrow_back_ios </i>
+                    </span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

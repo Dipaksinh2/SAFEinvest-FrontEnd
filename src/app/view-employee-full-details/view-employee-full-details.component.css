@@ -1,0 +1,46 @@
+.form-group {
+    margin-bottom: 20px;
+}
+
+.custom-header {
+    background-color: rgb(85, 56, 101);
+    color: aliceblue;
+    padding: 1px;
+    border-radius: 2px;
+}
+
+.custom-header h3 {
+    margin: 10px;
+}
+
+.custom-header hr {
+    border: 1px solid white;
+}
+
+input {
+    border: 0;
+    width: auto;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    overflow: visible;
+    color: rgb(205, 130, 26);
+}
+
+label {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    overflow: visible;
+    color: rgb(28, 30, 130);
+}
+
+.inner-card{
+    border: 2px solid red;
+    padding: 30px;
+}
+
+.btn{
+    height: 35px;
+    
+}

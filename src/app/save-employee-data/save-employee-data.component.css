@@ -1,0 +1,18 @@
+.form-group{
+    margin-bottom: 20px;
+}
+
+.custom-header{
+    background-color: rgb(85, 56, 101);
+    color: aliceblue;
+    padding: 1px;
+    border-radius: 2px;
+}
+
+.custom-header h3{
+    margin: 10px;
+}
+
+.custom-header hr{
+    border: 1px solid white;   
+}

@@ -1,0 +1,25 @@
+th{
+    font-variant-caps: all-petite-caps;
+    font-size: 20px;
+}
+
+.material-symbols-rounded:hover{
+    cursor: pointer;
+    color: rgb(251, 168, 1);
+    font-weight: 700;
+}
+
+.custom-header{
+    background-color: rgb(85, 56, 101);
+    color: aliceblue;
+    padding: 1px;
+    border-radius: 2px;
+}
+
+.custom-header h3{
+    margin: 10px;
+}
+
+.custom-header hr{
+    border: 1px solid white;   
+}

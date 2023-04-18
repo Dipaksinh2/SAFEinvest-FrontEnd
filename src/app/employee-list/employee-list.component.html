@@ -1,0 +1,44 @@
+<div class="m-3">
+    <div class="custom-header">
+        <h3>Employee List</h3>
+        <hr>
+    </div>
+    
+    <div class="container table-responsive">
+        <table class="table table-striped mt-5">
+            <thead class="text-center">
+                <tr>
+                    <th>Code</th>
+                    <th colspan="3">Name</th>
+                    <th>E-mail Id</th>
+                    <th>State</th>
+                    <th>Country</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider text-center">
+                <tr *ngFor="let employee of employees">
+                    <td>{{employee.emp_code}}</td>
+                    <td>{{employee.emp_firstname}}</td>
+                    <td>{{employee.emp_middlename}}</td>
+                    <td>{{employee.emp_lastname}}</td>
+                    <td>{{employee.emp_email_id}}</td>
+                    <td>{{employee.emp_state}}</td>
+                    <td>{{employee.emp_country}}</td>
+                    <td><a (click)="deleteEmployee(employee.emp_code)"><span class="material-symbols-rounded">
+                                delete
+                            </span></a>
+                        <a (click)="viewEmployeeDetail(employee.emp_code)"><span class="material-symbols-rounded">
+                                open_in_new
+                            </span></a>
+
+                        <a (click)="updateEmployeeDetails(employee.emp_code)"><span class="material-symbols-rounded">
+                                edit_note
+                            </span></a>
+                    </td>
+
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
